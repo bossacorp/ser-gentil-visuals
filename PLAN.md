@@ -36,19 +36,32 @@ PSD del diseñador ──► tools/separar_psd/separar.py ──► canciones/<n
 osciladores para flotación y titileo de estrellas (cap. 3); recursión/feedback para el eco dub
 (*Form+Code*, "Repetir"); desplazamiento por mapa para ondular nubes (ofBook, procesamiento de imagen).
 
-## 3. Arquitectura del patch (Max 8 compatible → corre en ambas Macs)
+## 3. Arquitectura del patch (Max 9.1+ en la MacBook Pro)
+
+Decisiones (18 nov): función en la **MacBook Pro con Max 9.1+**, salida a **proyector** (sin stream por ahora),
+**operación manual** (Ableton dispara audio sin pistas MIDI).
 
 ```
 ENTRADA                 PROCESO (GPU, texturas)                         SALIDA
-canciones/<nn>/*.png ─► jit.matrix importmovie ─► jit.gl.videoplane ×8 ─► jit.world (proyector, fullscreen)
-selector de canción     (una capa por elemento, @blend_enable 1)        └► jit.gl.syphonserver → OBS (opcional)
+canciones/<nn>/*.png ─► jit.matrix importmovie ─► jit.gl.videoplane ×8 ─► jit.world → proyector (fullscreen, 2.º monitor)
+selector de canción     (una capa por elemento, @blend_enable 1)
                         + modo tintas (4 videoplanes recoloreables)
                         + jit.gl.pix: desplazamiento / mal registro
+                        + jit.fx.* (Max 9): grano, VHS/CRT, kuwahara como "sabores" por canción
                         + feedback (eco dub) + capa de flash + capa negra
 CONTROL
 LPD8 (USB en función) ─► notein/ctlin ─► soft-takeover ─► slide ─► parámetros
-pattrstorage: presets por canción · UI en modo presentación (operable con mouse = plan B)
+v8: máquina de escenas/canciones · pattrstorage: presets por canción
+UI en modo presentación (operable con mouse = plan B)
+TEMPO (opcional v1.1)  Ableton Link desde el Live de audio → pulso y flashes cuantizados al compás
 ```
+
+- Base de salida: **1920×1080** hasta confirmar el proyector de la sede (el arte cuadrado se encuadra con zoom/paneo).
+- Aunque corre en Max 9, la capa de capas/LPD8 se mantiene en objetos de Max 8 donde no cueste nada,
+  para que la Mac mini sirva de **respaldo** con efectos reducidos.
+- **Sincronía sin MIDI:** el operador sigue la música a mano (tap tempo en el pad 7). Mejora opcional:
+  activar **Ableton Link** en el Live que dispara el audio (misma red que la MacBook) para que el pulso
+  visual quede en tempo sin pistas MIDI. Requiere probarlo en ensayo.
 
 ## 4. Mapa LPD8 (borrador, igual para todas las canciones)
 
@@ -78,8 +91,8 @@ Bluetooth agrega latencia: en función, **USB**. CC/notas reales se verifican co
 
 | Días | Fechas aprox. | Entregable |
 |---|---|---|
-| 1–2 | 18–19 nov | Repo + separación de *Por siempre* ✅ · recibir PSDs y setlist · confirmar Mac y pantalla |
-| 3–5 | 20–22 nov | **Patch v0.1** con *Por siempre*: stack de capas, LPD8 mapeado, negro/segura, monitor MIDI · prueba de fps en la Mac destino |
+| 1–2 | 18–19 nov | Repo + separación de *Por siempre* ✅ · Mac y salida definidas ✅ · recibir PSDs y setlist |
+| 3–5 | 20–22 nov | **Patch v0.1** con *Por siempre*: stack de capas, LPD8 mapeado, negro/segura, monitor MIDI · prueba de fps en la MacBook Pro |
 | 6–8 | 23–25 nov | Separar el resto de canciones · presets y paleta por canción · selector de canción |
 | 9–10 | 26–27 nov | Efectos firma (tintas, eco dub, ondulación) · sesión con el operador → ajustar mapa |
 | 11–12 | 28–29 nov | Ensayo con audio/banda · salida al proyector/LED/OBS |
@@ -90,13 +103,21 @@ Bluetooth agrega latencia: en función, **USB**. CC/notas reales se verifican co
 
 - `main` = siempre abrible en función. Trabajo nuevo en ramas (`cancion/<nn>`, `patch/<feature>`) y merge al probar.
 - Tags: `v0.1`, `v0.5-ensayo`, `v1.0-concierto`.
-- Los `.psd` **no** se suben (53 MB c/u); viven en la carpeta del diseñador. Todo se regenera con `separar.py`.
+- Los `.psd` **no** se suben (53–100+ MB c/u); viven en la carpeta del diseñador. Todo se regenera con `separar.py`.
   Si se quiere versionar los PSD → activar Git LFS (pendiente de decidir).
 
-## 7. Pendientes por confirmar
+## 7. Decisiones y pendientes
 
-1. ¿Qué Mac corre la función (MacBook Pro Max 9 o Mac mini Intel)? → define límites de efectos.
-2. ¿Salida: proyector 16:9, LED (resolución), o también stream?
-3. Setlist y PSDs del resto de canciones (¿todas con el mismo sistema de tintas?).
-4. ¿Hay audio o MIDI de la banda disponible para sincronía, o todo a mano del operador?
-5. Nombre del artista/fecha exacta para el README.
+| # | Tema | Estado |
+|---|---|---|
+| 1 | Máquina de función | ✅ MacBook Pro, Max 9.1+ |
+| 2 | Salida | ✅ proyector (resolución y relación de aspecto por confirmar con la sede) · sin stream |
+| 3 | PSDs del resto de canciones | ⏳ mismo sistema de tintas; pesan >100 MB → enviar reducidos (ver abajo) |
+| 4 | Sincronía | ✅ manual por el operador · Ableton Link como opción a probar |
+| 5 | Setlist, orden y fecha exacta | ⏳ |
+
+### Cómo preparar cada PSD para enviarlo
+Trabajamos a 2048 px, así que el original de 5906 px sobra:
+1. Photoshop → *Imagen → Tamaño de imagen* → **3000 × 3000 px**, remuestreo "Bicúbica (reducción)". No acoplar ni cambiar a RGB: las capas de tinta se quedan como están.
+2. *Archivo → Guardar como copia* (`nn_Nombre.psd`) con **Maximizar compatibilidad activado** (el compuesto se usa para medir la paleta).
+3. Si aún pesa mucho, comprimir en `.zip`. Debe quedar alrededor de 25–30 MB.
