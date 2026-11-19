@@ -1,0 +1,10 @@
+# Fuentes pesadas: viven fuera del repo (o en Git LFS si se decide)
+*.psd
+*.psb
+canciones/*/fuente/*
+!canciones/*/fuente/README.md
+
+# Max / macOS
+.DS_Store
+*.maxpat.bak
+__pycache__/
