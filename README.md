@@ -21,6 +21,15 @@ docs/                      hojas de operación, notas de ensayo
 
 ## Canciones
 
-| # | Canción | Estado |
-|---|---|---|
-| 05 | Por siempre | capas listas |
+| # | Canción | Modo de separación | Estado |
+|---|---|---|---|
+| 01 | Densidad | planos de profundidad | capas listas |
+| 02 | — | | pendiente PSD |
+| 03 | — | | pendiente PSD |
+| 04 | — | | pendiente PSD |
+| 05 | Por siempre | cielo + figuras | capas listas |
+
+## Paleta común (homologado)
+
+Las tintas se repiten entre canciones: **vino `#885951`** y **línea `#363636`** idénticas, **crema ≈ `#d6c08e`**.
+Cada canción puede sumar una tinta propia (Densidad: gris verdoso `#6f7a75`). Detalle en `canciones/*/paleta.json`.

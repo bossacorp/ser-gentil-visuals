@@ -39,5 +39,5 @@ Una capa por elemento, `@layer` con el número del archivo.
 ## Regenerar
 
 ```
-python3 -I tools/separar_psd/separar.py <ruta>/05_Por_siempre.psd tools/separar_psd/05_por_siempre.poligonos.json canciones/05_por_siempre
+python3 -I tools/separar_psd/separar.py <ruta>/05_Por_siempre.psd tools/separar_psd/05_por_siempre.json canciones/05_por_siempre
 ```
