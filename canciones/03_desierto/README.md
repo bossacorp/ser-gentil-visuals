@@ -15,7 +15,7 @@ fondo: si las figuras se mueven poco, la sombra sigue siendo creíble.
 | `03_mujer.png` | Mujer de pie mirando al sol | Respiración, ondeo del vestido |
 | `04_rocas.png` | Dos grupos de rocas moteadas (abajo izq. y der.) | Parallax de primer plano |
 
-## Tintas (`capas/tintas/`)
+## Tintas (`capas/tintas/`: blancas con alfa; Max les pone el color)
 
 | Archivo | Tinta | Color medido |
 |---|---|---|

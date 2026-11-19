@@ -1,0 +1,60 @@
+{
+ "_nota": "Cómo se mueve cada capa de escena. Homologado: el mismo personaje o tipo de elemento usa el mismo movimiento en todas las canciones. Edita aquí y corre: python3 tools/motor_config.py",
+ "_tipos": {
+  "fijo": "no se mueve",
+  "parallax": "deriva lenta con ruido; amplitud = perilla 2 (Deriva) × prof",
+  "flota": "sube/baja y gira un poco, como en gravedad cero; perilla 3 (Figuras)",
+  "respira": "pulso de escala al tempo (tap); perilla 3 (Figuras)",
+  "baila": "balanceo desde los pies al tempo; perilla 3 (Figuras)",
+  "mece": "balanceo lento desde el pivote; perilla 5 (Mecer)",
+  "gira": "giro lento sobre su centro; perilla 5 (Mecer)",
+  "titila": "parpadeo suave de opacidad; perilla 4 (Destellos)",
+  "fuego": "parpadeo rápido de brillo y escala; perilla 4 (Destellos)"
+ },
+ "_campos": "mov = tipo; prof = 0 (lejos) … 1 (primer plano), escala el parallax; figura = true → se queda visible al 'Aislar figuras' (pad 4); pivote = base | centro (del recuadro de la máscara); pivote_px = [x, y] fijo en px sobre 2048",
+ "orden": ["01_densidad", "02_mi_raiz", "03_desierto", "04_cordon", "05_por_siempre"],
+ "canciones": {
+  "01_densidad": {"titulo": "Densidad", "capas": {
+   "00_fondo":       {"mov": "parallax", "prof": 0.15},
+   "01_mar_y_barca": {"mov": "parallax", "prof": 0.4},
+   "02_auto":        {"mov": "flota",    "prof": 0.6},
+   "03_ola_oscura":  {"mov": "respira",  "prof": 0.7},
+   "04_perro":       {"mov": "respira",  "prof": 0.9, "figura": true},
+   "05_mujer":       {"mov": "respira",  "prof": 0.9, "figura": true}
+  }},
+  "02_mi_raiz": {"titulo": "Mi raíz", "capas": {
+   "00_fondo": {"mov": "parallax", "prof": 0.15},
+   "01_barco": {"mov": "mece",     "prof": 0.3, "pivote": "base"},
+   "02_isla":  {"mov": "fijo",     "prof": 0.5},
+   "03_copa":  {"mov": "mece",     "prof": 0.6, "pivote": "base"},
+   "04_luna":  {"mov": "mece",     "prof": 0.8, "pivote": "base"},
+   "05_perro": {"mov": "respira",  "prof": 0.9, "figura": true}
+  }},
+  "03_desierto": {"titulo": "Desierto", "capas": {
+   "00_fondo":    {"mov": "parallax", "prof": 0.1},
+   "01_calavera": {"mov": "fijo",     "prof": 0.4},
+   "02_oso":      {"mov": "respira",  "prof": 0.6, "figura": true},
+   "03_mujer":    {"mov": "respira",  "prof": 0.6, "figura": true},
+   "04_rocas":    {"mov": "parallax", "prof": 1.0}
+  }},
+  "04_cordon": {"titulo": "Cordón", "capas": {
+   "00_fondo":        {"mov": "parallax", "prof": 0.1},
+   "01_combi":        {"mov": "fijo",     "prof": 0.3},
+   "02_reunion":      {"mov": "respira",  "prof": 0.5, "figura": true},
+   "03_mujer":        {"mov": "baila",    "prof": 0.6, "figura": true, "pivote": "base"},
+   "04_fogata":       {"mov": "fuego",    "prof": 0.6, "pivote": "base"},
+   "05_yuca":         {"mov": "mece",     "prof": 0.8, "pivote": "base"},
+   "06_primer_plano": {"mov": "parallax", "prof": 1.0}
+  }},
+  "05_por_siempre": {"titulo": "Por siempre", "capas": {
+   "00_cielo":         {"mov": "fijo",     "prof": 0.0},
+   "01_estrellas":     {"mov": "titila",   "prof": 0.05},
+   "02_luna":          {"mov": "mece",     "prof": 0.2, "pivote_px": [98, 1745]},
+   "03_nubes_masa":    {"mov": "parallax", "prof": 0.5},
+   "04_nubes_sueltas": {"mov": "parallax", "prof": 0.8},
+   "05_oso":           {"mov": "flota",    "prof": 0.6, "figura": true},
+   "06_mujer":         {"mov": "flota",    "prof": 0.7, "figura": true},
+   "07_leon":          {"mov": "flota",    "prof": 0.7, "figura": true}
+  }}
+ }
+}

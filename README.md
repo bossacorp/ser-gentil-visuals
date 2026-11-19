@@ -4,6 +4,8 @@ Visuales en vivo para el concierto de reggae: arte de cada canción separado en 
 en tiempo real desde Max con un **Akai LPD8**.
 
 - Plan, cronograma y mapa de controles → [`PLAN.md`](PLAN.md)
+- **Motor de visuales v0.1** → `patches/ser_gentil_motor.maxpat` · operación: [`docs/operacion.md`](docs/operacion.md) ·
+  validación pendiente: [`docs/validacion_v0.1.md`](docs/validacion_v0.1.md)
 
 ## Archivos pesados (bucket de GCS)
 
@@ -26,8 +28,11 @@ canciones/<nn_nombre>/     arte de cada canción listo para Max
   mascaras/                lo mismo en escala de grises (para efectos por zona)
   preview/                 hoja de contacto, mapa de segmentación, original vs recompuesto
   paleta.json              colores medidos (hex, RGB y 0–1 para Max)
-patches/                   patches de Max (.maxpat) y archivos auxiliares
+patches/                   motor de Max: ser_gentil_motor.maxpat (generado por build_motor.py), motor.js,
+                           canciones.json (generado por tools/motor_config.py), movimientos.json,
+                           paletas.json, lpd8_map.json
 tools/separar_psd/         script que convierte un PSD en todo lo anterior
+tools/sim/                 simulador de motor.js fuera de Max + render de prueba de un cuadro
 docs/                      hojas de operación, notas de ensayo
 ```
 

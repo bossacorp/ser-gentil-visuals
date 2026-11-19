@@ -18,7 +18,7 @@ mujer que baila y la fogata van aparte, porque son los dos focos de movimiento.
 | `05_yuca.png` | Yuca grande (der.), recortada sobre la tinta oscura | Mecerse lento, primer plano |
 | `06_primer_plano.png` | Cactus y nopales (izq.), plantas (centro), roca moteada (der.) | Parallax de primer plano |
 
-## Tintas (`capas/tintas/`)
+## Tintas (`capas/tintas/`: blancas con alfa; Max les pone el color)
 
 | Archivo | Tinta | Color medido |
 |---|---|---|

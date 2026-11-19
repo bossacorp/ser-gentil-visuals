@@ -19,7 +19,7 @@ recorte sigue el borde real de la tinta de línea, así las ondulaciones de la c
 Nota: unas pocas hojas sueltas abajo a la izquierda de la copa quedaron en el fondo (ampliar el
 recorte metía suelo en la copa).
 
-## Tintas (`capas/tintas/`)
+## Tintas (`capas/tintas/`: blancas con alfa; Max les pone el color)
 
 Orden distinto en este PSD (el gris va abajo de la crema):
 

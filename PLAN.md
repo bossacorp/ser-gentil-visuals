@@ -63,14 +63,14 @@ TEMPO (opcional v1.1)  Ableton Link desde el Live de audio → pulso y flashes c
   activar **Ableton Link** en el Live que dispara el audio (misma red que la MacBook) para que el pulso
   visual quede en tempo sin pistas MIDI. Requiere probarlo en ensayo.
 
-## 4. Mapa LPD8 (borrador, igual para todas las canciones)
+## 4. Mapa LPD8 (v0.1, igual para todas las canciones — detalle en docs/operacion.md)
 
 | Control | Función | Tipo |
 |---|---|---|
 | Pad 1 | **Negro** (pánico) | toggle |
 | Pad 2 | **Arte completo / escena segura** | disparo |
 | Pad 3 | Flash (intensidad = velocidad del golpe) | momentáneo |
-| Pad 4 | Aislar figuras (nubes y luna bajan) | momentáneo |
+| Pad 4 | Aislar figuras (el entorno se oscurece) | momentáneo |
 | Pad 5 | Modo tintas ↔ modo escena | toggle |
 | Pad 6 | Golpe de mal registro (tintas se desfasan) | momentáneo |
 | Pad 7 | Tap tempo (pulso de respiración) | disparo |
@@ -78,8 +78,8 @@ TEMPO (opcional v1.1)  Ableton Link desde el Live de audio → pulso y flashes c
 | Perilla 1 | Cámara: zoom/paneo (Ken Burns) | continuo |
 | Perilla 2 | Deriva de nubes (desplazamiento) | continuo |
 | Perilla 3 | Flotación de figuras (amplitud) | continuo |
-| Perilla 4 | Estrellas: titileo | continuo |
-| Perilla 5 | Luna: giro/brillo | continuo |
+| Perilla 4 | Destellos: estrellas y fuego | continuo |
+| Perilla 5 | Mecer: árbol, yuca, barco, lunas | continuo |
 | Perilla 6 | Eco dub (feedback) | continuo |
 | Perilla 7 | Paleta: original → paleta alterna | continuo |
 | Perilla 8 | Master (fundido general) | continuo |
@@ -92,8 +92,8 @@ Bluetooth agrega latencia: en función, **USB**. CC/notas reales se verifican co
 | Días | Fechas aprox. | Entregable |
 |---|---|---|
 | 1–2 | 18–19 nov | Repo + separación de *Por siempre* ✅ · Mac y salida definidas ✅ · recibir PSDs y setlist |
-| 3–5 | 20–22 nov | **Patch v0.1** con *Por siempre*: stack de capas, LPD8 mapeado, negro/segura, monitor MIDI · prueba de fps en la MacBook Pro |
-| 6–8 | 23–25 nov | Separar el resto de canciones · presets y paleta por canción · selector de canción |
+| 3–5 | 20–22 nov | ✅ (18 nov) **Patch v0.1** con *Por siempre*: stack de capas, LPD8 mapeado, negro/segura, monitor MIDI · prueba de fps en la MacBook Pro |
+| 6–8 | 23–25 nov | ✅ (18 nov) Separar el resto de canciones · presets y paleta por canción · selector de canción |
 | 9–10 | 26–27 nov | Efectos firma (tintas, eco dub, ondulación) · sesión con el operador → ajustar mapa |
 | 11–12 | 28–29 nov | Ensayo con audio/banda · salida al proyector/LED/OBS |
 | 13 | 30 nov–1 dic | **Congelar v1.0** (tag `v1.0-concierto`) · plan B · hoja de operación del LPD8 |

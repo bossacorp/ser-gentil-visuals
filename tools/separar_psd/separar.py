@@ -6,8 +6,8 @@ listas para Max/Jitter.
 Produce dos familias de capas, todas PNG con alfa, del mismo tamaño (por defecto 2048×2048),
 alineadas pixel a pixel para que se puedan apilar sin offsets:
 
-  capas/tintas/   Una capa por tinta del PSD. Sirven para recolorear cada tinta por separado
-                  y para efectos de "mal registro" de serigrafía.
+  capas/tintas/   Una capa por tinta del PSD, en BLANCO con alfa (el color medido va en paleta.json y
+                  lo aplica Max). Sirven para recolorear cada tinta y para el "mal registro".
   capas/escena/   Elementos o planos de la imagen. Apilados en orden 00→NN recomponen el arte.
                   Sirven para mover/animar cada elemento (parallax, flotación, etc.).
   mascaras/       El alfa de cada capa en escala de grises (blanco = elemento), para efectos por zona.
@@ -207,11 +207,12 @@ def main():
         else:
             pal[nm] = [int(v) for v in (rgba(vis[i])[..., :3].reshape(-1, 3).mean(0) * 255)]
 
-    # --- tintas ---
+    # --- tintas: BLANCAS con alfa; el color lo pone Max (paleta.json → jit.gl.videoplane @color),
+    #     así el operador puede recolorear cada tinta con cualquier color en vivo ---
+    white = np.full((S, S, 3), 255, np.float32)
     for i, nm in enumerate(tint_names):
         fname = f"t{i + 1}_{nm}"
-        save_rgba(f"{O}/capas/tintas/{fname}.png",
-                  np.broadcast_to(np.array(pal[nm], np.float32), (S, S, 3)), al[nm])
+        save_rgba(f"{O}/capas/tintas/{fname}.png", white, al[nm])
         save_mask(f"{O}/mascaras/{fname}.png", al[nm])
     for j, l in enumerate(hid):
         p = rgba(l)

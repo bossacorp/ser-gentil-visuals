@@ -1,0 +1,17 @@
+{
+ "_nota": "Paletas alternas, iguales para todas las canciones (homologado). Colores RGB 0–1 por tinta. 'tono' multiplica las capas de escena (que ya traen color) para acercarlas a la paleta. Pad 8 elige la siguiente paleta; perilla 7 mezcla original → elegida.",
+ "alternas": [
+  {"nombre": "dub_noche",
+   "tintas": {"papel": [0.04, 0.06, 0.12], "crema": [0.56, 0.83, 1.0], "vino": [0.17, 0.24, 0.62], "gris": [0.11, 0.29, 0.37], "linea": [0.92, 0.96, 1.0]},
+   "tono": [0.6, 0.72, 1.0]},
+  {"nombre": "fuego",
+   "tintas": {"papel": [0.11, 0.02, 0.01], "crema": [1.0, 0.76, 0.24], "vino": [0.82, 0.22, 0.12], "gris": [0.48, 0.11, 0.07], "linea": [0.08, 0.01, 0.0]},
+   "tono": [1.0, 0.72, 0.5]},
+  {"nombre": "raices",
+   "tintas": {"papel": [0.05, 0.05, 0.05], "crema": [0.99, 0.82, 0.09], "vino": [0.81, 0.07, 0.15], "gris": [0.0, 0.61, 0.23], "linea": [0.05, 0.05, 0.05]},
+   "tono": [1.0, 0.9, 0.7]},
+  {"nombre": "negativo",
+   "tintas": {"papel": [0.08, 0.08, 0.08], "crema": [0.16, 0.25, 0.44], "vino": [0.47, 0.65, 0.68], "gris": [0.56, 0.52, 0.54], "linea": [0.79, 0.79, 0.79]},
+   "tono": [0.85, 0.9, 1.0]}
+ ]
+}

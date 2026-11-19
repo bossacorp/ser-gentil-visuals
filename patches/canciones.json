@@ -1,0 +1,829 @@
+{
+ "_nota": "GENERADO por tools/motor_config.py \u2014 no editar a mano (edita patches/movimientos.json).",
+ "canciones": [
+  {
+   "id": "01_densidad",
+   "titulo": "Densidad",
+   "escena": [
+    {
+     "nombre": "00_fondo",
+     "archivo": "canciones/01_densidad/capas/escena/00_fondo.png",
+     "mov": "parallax",
+     "prof": 0.15,
+     "figura": false,
+     "pivote": [
+      0.0,
+      0.0
+     ],
+     "bbox_px": [
+      0,
+      0,
+      2047,
+      2047
+     ]
+    },
+    {
+     "nombre": "01_mar_y_barca",
+     "archivo": "canciones/01_densidad/capas/escena/01_mar_y_barca.png",
+     "mov": "parallax",
+     "prof": 0.4,
+     "figura": false,
+     "pivote": [
+      -0.0005,
+      -0.0386
+     ],
+     "bbox_px": [
+      0,
+      80,
+      2047,
+      2047
+     ]
+    },
+    {
+     "nombre": "02_auto",
+     "archivo": "canciones/01_densidad/capas/escena/02_auto.png",
+     "mov": "flota",
+     "prof": 0.6,
+     "figura": false,
+     "pivote": [
+      -0.7959,
+      0.1211
+     ],
+     "bbox_px": [
+      0,
+      788,
+      418,
+      1012
+     ]
+    },
+    {
+     "nombre": "03_ola_oscura",
+     "archivo": "canciones/01_densidad/capas/escena/03_ola_oscura.png",
+     "mov": "respira",
+     "prof": 0.7,
+     "figura": false,
+     "pivote": [
+      0.561,
+      -0.4561
+     ],
+     "bbox_px": [
+      1150,
+      935,
+      2047,
+      2047
+     ]
+    },
+    {
+     "nombre": "04_perro",
+     "archivo": "canciones/01_densidad/capas/escena/04_perro.png",
+     "mov": "respira",
+     "prof": 0.9,
+     "figura": true,
+     "pivote": [
+      -0.5312,
+      -0.6978
+     ],
+     "bbox_px": [
+      320,
+      1430,
+      640,
+      2047
+     ]
+    },
+    {
+     "nombre": "05_mujer",
+     "archivo": "canciones/01_densidad/capas/escena/05_mujer.png",
+     "mov": "respira",
+     "prof": 0.9,
+     "figura": true,
+     "pivote": [
+      -0.1479,
+      -0.4253
+     ],
+     "bbox_px": [
+      630,
+      872,
+      1115,
+      2047
+     ]
+    }
+   ],
+   "tintas": [
+    {
+     "nombre": "t1_papel",
+     "archivo": "canciones/01_densidad/capas/tintas/t1_papel.png",
+     "tinta": "papel",
+     "color": [
+      0.9176,
+      0.8902,
+      0.8314
+     ]
+    },
+    {
+     "nombre": "t2_crema",
+     "archivo": "canciones/01_densidad/capas/tintas/t2_crema.png",
+     "tinta": "crema",
+     "color": [
+      0.8353,
+      0.7451,
+      0.5529
+     ]
+    },
+    {
+     "nombre": "t3_vino",
+     "archivo": "canciones/01_densidad/capas/tintas/t3_vino.png",
+     "tinta": "vino",
+     "color": [
+      0.5333,
+      0.349,
+      0.3176
+     ]
+    },
+    {
+     "nombre": "t4_gris",
+     "archivo": "canciones/01_densidad/capas/tintas/t4_gris.png",
+     "tinta": "gris",
+     "color": [
+      0.4353,
+      0.4784,
+      0.4588
+     ]
+    },
+    {
+     "nombre": "t5_linea",
+     "archivo": "canciones/01_densidad/capas/tintas/t5_linea.png",
+     "tinta": "linea",
+     "color": [
+      0.2118,
+      0.2118,
+      0.2118
+     ]
+    }
+   ]
+  },
+  {
+   "id": "02_mi_raiz",
+   "titulo": "Mi ra\u00edz",
+   "escena": [
+    {
+     "nombre": "00_fondo",
+     "archivo": "canciones/02_mi_raiz/capas/escena/00_fondo.png",
+     "mov": "parallax",
+     "prof": 0.15,
+     "figura": false,
+     "pivote": [
+      0.0,
+      0.0
+     ],
+     "bbox_px": [
+      0,
+      0,
+      2047,
+      2047
+     ]
+    },
+    {
+     "nombre": "01_barco",
+     "archivo": "canciones/02_mi_raiz/capas/escena/01_barco.png",
+     "mov": "mece",
+     "prof": 0.3,
+     "figura": false,
+     "pivote": [
+      -0.6582,
+      0.4873
+     ],
+     "bbox_px": [
+      0,
+      0,
+      700,
+      525
+     ]
+    },
+    {
+     "nombre": "02_isla",
+     "archivo": "canciones/02_mi_raiz/capas/escena/02_isla.png",
+     "mov": "fijo",
+     "prof": 0.5,
+     "figura": false,
+     "pivote": [
+      0.3418,
+      -0.1963
+     ],
+     "bbox_px": [
+      701,
+      930,
+      2047,
+      1520
+     ]
+    },
+    {
+     "nombre": "03_copa",
+     "archivo": "canciones/02_mi_raiz/capas/escena/03_copa.png",
+     "mov": "mece",
+     "prof": 0.6,
+     "figura": false,
+     "pivote": [
+      0.3779,
+      0.0293
+     ],
+     "bbox_px": [
+      775,
+      0,
+      2047,
+      994
+     ]
+    },
+    {
+     "nombre": "04_luna",
+     "archivo": "canciones/02_mi_raiz/capas/escena/04_luna.png",
+     "mov": "mece",
+     "prof": 0.8,
+     "figura": false,
+     "pivote": [
+      0.7012,
+      -0.7393
+     ],
+     "bbox_px": [
+      1550,
+      1531,
+      1934,
+      1781
+     ]
+    },
+    {
+     "nombre": "05_perro",
+     "archivo": "canciones/02_mi_raiz/capas/escena/05_perro.png",
+     "mov": "respira",
+     "prof": 0.9,
+     "figura": true,
+     "pivote": [
+      0.0391,
+      -0.686
+     ],
+     "bbox_px": [
+      688,
+      1565,
+      1440,
+      1888
+     ]
+    }
+   ],
+   "tintas": [
+    {
+     "nombre": "t1_papel",
+     "archivo": "canciones/02_mi_raiz/capas/tintas/t1_papel.png",
+     "tinta": "papel",
+     "color": [
+      0.9216,
+      0.8941,
+      0.8392
+     ]
+    },
+    {
+     "nombre": "t2_gris",
+     "archivo": "canciones/02_mi_raiz/capas/tintas/t2_gris.png",
+     "tinta": "gris",
+     "color": [
+      0.4353,
+      0.4784,
+      0.4588
+     ]
+    },
+    {
+     "nombre": "t3_crema",
+     "archivo": "canciones/02_mi_raiz/capas/tintas/t3_crema.png",
+     "tinta": "crema",
+     "color": [
+      0.8392,
+      0.7529,
+      0.5569
+     ]
+    },
+    {
+     "nombre": "t4_vino",
+     "archivo": "canciones/02_mi_raiz/capas/tintas/t4_vino.png",
+     "tinta": "vino",
+     "color": [
+      0.5333,
+      0.349,
+      0.3176
+     ]
+    },
+    {
+     "nombre": "t5_linea",
+     "archivo": "canciones/02_mi_raiz/capas/tintas/t5_linea.png",
+     "tinta": "linea",
+     "color": [
+      0.2118,
+      0.2118,
+      0.2118
+     ]
+    }
+   ]
+  },
+  {
+   "id": "03_desierto",
+   "titulo": "Desierto",
+   "escena": [
+    {
+     "nombre": "00_fondo",
+     "archivo": "canciones/03_desierto/capas/escena/00_fondo.png",
+     "mov": "parallax",
+     "prof": 0.1,
+     "figura": false,
+     "pivote": [
+      0.0,
+      0.0
+     ],
+     "bbox_px": [
+      0,
+      0,
+      2047,
+      2047
+     ]
+    },
+    {
+     "nombre": "01_calavera",
+     "archivo": "canciones/03_desierto/capas/escena/01_calavera.png",
+     "mov": "fijo",
+     "prof": 0.4,
+     "figura": false,
+     "pivote": [
+      -0.73,
+      0.2935
+     ],
+     "bbox_px": [
+      66,
+      535,
+      487,
+      912
+     ]
+    },
+    {
+     "nombre": "02_oso",
+     "archivo": "canciones/03_desierto/capas/escena/02_oso.png",
+     "mov": "respira",
+     "prof": 0.6,
+     "figura": true,
+     "pivote": [
+      0.4922,
+      0.3135
+     ],
+     "bbox_px": [
+      1446,
+      546,
+      1610,
+      860
+     ]
+    },
+    {
+     "nombre": "03_mujer",
+     "archivo": "canciones/03_desierto/capas/escena/03_mujer.png",
+     "mov": "respira",
+     "prof": 0.6,
+     "figura": true,
+     "pivote": [
+      0.1113,
+      0.561
+     ],
+     "bbox_px": [
+      1032,
+      82,
+      1244,
+      817
+     ]
+    },
+    {
+     "nombre": "04_rocas",
+     "archivo": "canciones/03_desierto/capas/escena/04_rocas.png",
+     "mov": "parallax",
+     "prof": 1.0,
+     "figura": false,
+     "pivote": [
+      -0.0005,
+      -0.6123
+     ],
+     "bbox_px": [
+      0,
+      1255,
+      2047,
+      2047
+     ]
+    }
+   ],
+   "tintas": [
+    {
+     "nombre": "t1_papel",
+     "archivo": "canciones/03_desierto/capas/tintas/t1_papel.png",
+     "tinta": "papel",
+     "color": [
+      0.9216,
+      0.8941,
+      0.8392
+     ]
+    },
+    {
+     "nombre": "t2_vino",
+     "archivo": "canciones/03_desierto/capas/tintas/t2_vino.png",
+     "tinta": "vino",
+     "color": [
+      0.5333,
+      0.349,
+      0.3176
+     ]
+    },
+    {
+     "nombre": "t3_gris",
+     "archivo": "canciones/03_desierto/capas/tintas/t3_gris.png",
+     "tinta": "gris",
+     "color": [
+      0.4353,
+      0.4784,
+      0.4588
+     ]
+    },
+    {
+     "nombre": "t4_crema",
+     "archivo": "canciones/03_desierto/capas/tintas/t4_crema.png",
+     "tinta": "crema",
+     "color": [
+      0.8392,
+      0.7529,
+      0.5569
+     ]
+    },
+    {
+     "nombre": "t5_linea",
+     "archivo": "canciones/03_desierto/capas/tintas/t5_linea.png",
+     "tinta": "linea",
+     "color": [
+      0.2118,
+      0.2118,
+      0.2118
+     ]
+    }
+   ]
+  },
+  {
+   "id": "04_cordon",
+   "titulo": "Cord\u00f3n",
+   "escena": [
+    {
+     "nombre": "00_fondo",
+     "archivo": "canciones/04_cordon/capas/escena/00_fondo.png",
+     "mov": "parallax",
+     "prof": 0.1,
+     "figura": false,
+     "pivote": [
+      0.0,
+      0.0
+     ],
+     "bbox_px": [
+      0,
+      0,
+      2047,
+      2047
+     ]
+    },
+    {
+     "nombre": "01_combi",
+     "archivo": "canciones/04_cordon/capas/escena/01_combi.png",
+     "mov": "fijo",
+     "prof": 0.3,
+     "figura": false,
+     "pivote": [
+      -0.5898,
+      0.4326
+     ],
+     "bbox_px": [
+      262,
+      450,
+      578,
+      712
+     ]
+    },
+    {
+     "nombre": "02_reunion",
+     "archivo": "canciones/04_cordon/capas/escena/02_reunion.png",
+     "mov": "respira",
+     "prof": 0.5,
+     "figura": true,
+     "pivote": [
+      -0.0625,
+      0.0234
+     ],
+     "bbox_px": [
+      340,
+      520,
+      1580,
+      1480
+     ]
+    },
+    {
+     "nombre": "03_mujer",
+     "archivo": "canciones/04_cordon/capas/escena/03_mujer.png",
+     "mov": "baila",
+     "prof": 0.6,
+     "figura": true,
+     "pivote": [
+      0.0938,
+      -0.1328
+     ],
+     "bbox_px": [
+      970,
+      600,
+      1270,
+      1160
+     ]
+    },
+    {
+     "nombre": "04_fogata",
+     "archivo": "canciones/04_cordon/capas/escena/04_fogata.png",
+     "mov": "fuego",
+     "prof": 0.6,
+     "figura": false,
+     "pivote": [
+      0.0571,
+      -0.3135
+     ],
+     "bbox_px": [
+      965,
+      930,
+      1200,
+      1345
+     ]
+    },
+    {
+     "nombre": "05_yuca",
+     "archivo": "canciones/04_cordon/capas/escena/05_yuca.png",
+     "mov": "mece",
+     "prof": 0.8,
+     "figura": false,
+     "pivote": [
+      0.561,
+      -0.999
+     ],
+     "bbox_px": [
+      1150,
+      0,
+      2047,
+      2047
+     ]
+    },
+    {
+     "nombre": "06_primer_plano",
+     "archivo": "canciones/04_cordon/capas/escena/06_primer_plano.png",
+     "mov": "parallax",
+     "prof": 1.0,
+     "figura": false,
+     "pivote": [
+      -0.0005,
+      -0.6147
+     ],
+     "bbox_px": [
+      0,
+      1260,
+      2047,
+      2047
+     ]
+    }
+   ],
+   "tintas": [
+    {
+     "nombre": "t1_papel",
+     "archivo": "canciones/04_cordon/capas/tintas/t1_papel.png",
+     "tinta": "papel",
+     "color": [
+      0.9216,
+      0.8941,
+      0.8392
+     ]
+    },
+    {
+     "nombre": "t2_crema",
+     "archivo": "canciones/04_cordon/capas/tintas/t2_crema.png",
+     "tinta": "crema",
+     "color": [
+      0.8392,
+      0.7529,
+      0.5569
+     ]
+    },
+    {
+     "nombre": "t3_vino",
+     "archivo": "canciones/04_cordon/capas/tintas/t3_vino.png",
+     "tinta": "vino",
+     "color": [
+      0.5333,
+      0.349,
+      0.3176
+     ]
+    },
+    {
+     "nombre": "t4_gris",
+     "archivo": "canciones/04_cordon/capas/tintas/t4_gris.png",
+     "tinta": "gris",
+     "color": [
+      0.4353,
+      0.4784,
+      0.4588
+     ]
+    },
+    {
+     "nombre": "t5_linea",
+     "archivo": "canciones/04_cordon/capas/tintas/t5_linea.png",
+     "tinta": "linea",
+     "color": [
+      0.2118,
+      0.2118,
+      0.2118
+     ]
+    }
+   ]
+  },
+  {
+   "id": "05_por_siempre",
+   "titulo": "Por siempre",
+   "escena": [
+    {
+     "nombre": "00_cielo",
+     "archivo": "canciones/05_por_siempre/capas/escena/00_cielo.png",
+     "mov": "fijo",
+     "prof": 0.0,
+     "figura": false,
+     "pivote": [
+      0.0,
+      0.0
+     ],
+     "bbox_px": [
+      0,
+      0,
+      2047,
+      2047
+     ]
+    },
+    {
+     "nombre": "01_estrellas",
+     "archivo": "canciones/05_por_siempre/capas/escena/01_estrellas.png",
+     "mov": "titila",
+     "prof": 0.05,
+     "figura": false,
+     "pivote": [
+      0.0635,
+      0.0127
+     ],
+     "bbox_px": [
+      163,
+      0,
+      2015,
+      2022
+     ]
+    },
+    {
+     "nombre": "02_luna",
+     "archivo": "canciones/05_por_siempre/capas/escena/02_luna.png",
+     "mov": "mece",
+     "prof": 0.2,
+     "figura": false,
+     "pivote": [
+      -0.9043,
+      -0.7041
+     ],
+     "bbox_px": [
+      0,
+      1444,
+      399,
+      2047
+     ]
+    },
+    {
+     "nombre": "03_nubes_masa",
+     "archivo": "canciones/05_por_siempre/capas/escena/03_nubes_masa.png",
+     "mov": "parallax",
+     "prof": 0.5,
+     "figura": false,
+     "pivote": [
+      -0.0288,
+      0.0005
+     ],
+     "bbox_px": [
+      0,
+      0,
+      1989,
+      2047
+     ]
+    },
+    {
+     "nombre": "04_nubes_sueltas",
+     "archivo": "canciones/05_por_siempre/capas/escena/04_nubes_sueltas.png",
+     "mov": "parallax",
+     "prof": 0.8,
+     "figura": false,
+     "pivote": [
+      -0.0005,
+      0.0005
+     ],
+     "bbox_px": [
+      0,
+      0,
+      2047,
+      2047
+     ]
+    },
+    {
+     "nombre": "05_oso",
+     "archivo": "canciones/05_por_siempre/capas/escena/05_oso.png",
+     "mov": "flota",
+     "prof": 0.6,
+     "figura": true,
+     "pivote": [
+      -0.4448,
+      0.6934
+     ],
+     "bbox_px": [
+      388,
+      53,
+      749,
+      575
+     ]
+    },
+    {
+     "nombre": "06_mujer",
+     "archivo": "canciones/05_por_siempre/capas/escena/06_mujer.png",
+     "mov": "flota",
+     "prof": 0.7,
+     "figura": true,
+     "pivote": [
+      0.1123,
+      0.2622
+     ],
+     "bbox_px": [
+      790,
+      216,
+      1488,
+      1295
+     ]
+    },
+    {
+     "nombre": "07_leon",
+     "archivo": "canciones/05_por_siempre/capas/escena/07_leon.png",
+     "mov": "flota",
+     "prof": 0.7,
+     "figura": true,
+     "pivote": [
+      0.6172,
+      0.3369
+     ],
+     "bbox_px": [
+      1371,
+      184,
+      1941,
+      1174
+     ]
+    }
+   ],
+   "tintas": [
+    {
+     "nombre": "t1_papel",
+     "archivo": "canciones/05_por_siempre/capas/tintas/t1_papel.png",
+     "tinta": "papel",
+     "color": [
+      0.9804,
+      0.9451,
+      0.9294
+     ]
+    },
+    {
+     "nombre": "t2_crema",
+     "archivo": "canciones/05_por_siempre/capas/tintas/t2_crema.png",
+     "tinta": "crema",
+     "color": [
+      0.8392,
+      0.7529,
+      0.5569
+     ]
+    },
+    {
+     "nombre": "t3_vino",
+     "archivo": "canciones/05_por_siempre/capas/tintas/t3_vino.png",
+     "tinta": "vino",
+     "color": [
+      0.5333,
+      0.349,
+      0.3176
+     ]
+    },
+    {
+     "nombre": "t4_linea",
+     "archivo": "canciones/05_por_siempre/capas/tintas/t4_linea.png",
+     "tinta": "linea",
+     "color": [
+      0.2118,
+      0.2118,
+      0.2118
+     ]
+    }
+   ]
+  }
+ ]
+}

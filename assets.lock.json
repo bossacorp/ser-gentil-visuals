@@ -24,24 +24,24 @@
   "bytes": 6058160
  },
  "canciones/01_densidad/capas/tintas/t1_papel.png": {
-  "sha256": "6e9edc02ca38089c7fb9d10cbb4bed0135c898ddac3d2934c5a4c7dbdbfd579a",
-  "bytes": 20338
+  "sha256": "ab7f49adf51cad3025b09de284254fa69eebc94d45007f166110abd4907e0faa",
+  "bytes": 20333
  },
  "canciones/01_densidad/capas/tintas/t2_crema.png": {
-  "sha256": "ef27c737d830174c10addade4317f31d1a3701eb9b2067d122cd7c0e204f8807",
-  "bytes": 259415
+  "sha256": "9d6252bcbe73c48e9634d668a73aa9ace545454d33c844e9bf2418649ec38e23",
+  "bytes": 258830
  },
  "canciones/01_densidad/capas/tintas/t3_vino.png": {
-  "sha256": "a877f06182c5d3766ec0f12411d36f6c8b5f00211b20f2e98cd94861b827a646",
-  "bytes": 1511212
+  "sha256": "a4d1943617dfd00d74aaf294e0b51217a9da67c321e0b04294857a8623264266",
+  "bytes": 1510789
  },
  "canciones/01_densidad/capas/tintas/t4_gris.png": {
-  "sha256": "f6e57b583e804b7474b990d5048a2174892e8c0b35e394c4c5a624c4061b9d53",
-  "bytes": 1435984
+  "sha256": "88caf0866d075e0bc547b91f4d76e73848e7561dd9c92bd5548331c7a2f0208b",
+  "bytes": 1436875
  },
  "canciones/01_densidad/capas/tintas/t5_linea.png": {
-  "sha256": "bc6485a4e358845cfcc238a53a9eebdbf02e15a5de64c0705466f9e2b1303155",
-  "bytes": 2805006
+  "sha256": "f6b1e5bc9a984d329661a41f27ca9e4efdd53fd33a5d86597e2435935d4210ab",
+  "bytes": 2646837
  },
  "canciones/01_densidad/fuente/01_Densidad.psd": {
   "sha256": "f7e4a58f735cc4dcfc986d8090d7794818d4d9a8436c7d7ef0d807f9ccbeb250",
@@ -112,24 +112,24 @@
   "bytes": 5472475
  },
  "canciones/02_mi_raiz/capas/tintas/t1_papel.png": {
-  "sha256": "7520a13128e998bd6dd977cb10be4fdbbbd1ef4e90ea4b50518e48f2f2b395f8",
-  "bytes": 20338
+  "sha256": "ab7f49adf51cad3025b09de284254fa69eebc94d45007f166110abd4907e0faa",
+  "bytes": 20333
  },
  "canciones/02_mi_raiz/capas/tintas/t2_gris.png": {
-  "sha256": "1e2bc57ddce2f5a78ca2330a35e90c21bde80f4b279d3fdd0a1093819b264cae",
-  "bytes": 920681
+  "sha256": "2967dfb31dd6993e01c40b6a555b778aab69dff1196d29eda5d1f46625357386",
+  "bytes": 919485
  },
  "canciones/02_mi_raiz/capas/tintas/t3_crema.png": {
-  "sha256": "eba9d0d68e20e4faa94e7a10e88330a05c1d4b87b4bc7e8cf1f160f21762778b",
-  "bytes": 746488
+  "sha256": "2ecb1591484ef72ac05b8313ddb79a3ed04b3a123f86ac6977ef35f05724cd08",
+  "bytes": 742797
  },
  "canciones/02_mi_raiz/capas/tintas/t4_vino.png": {
-  "sha256": "901f92ddb19673fa5f58546f45ebb6d1147e9ac7f5fcbc78bf72160a6ef11ac5",
-  "bytes": 818953
+  "sha256": "c11c155a75d97be61a3355c22ad33c8ec97508b7b5c8095b79a79e995fff7cd2",
+  "bytes": 816381
  },
  "canciones/02_mi_raiz/capas/tintas/t5_linea.png": {
-  "sha256": "25ef7fcf8066be6ef98c94e888e097aac4b33d09a58b5b5e7ad1775370284bfe",
-  "bytes": 2428458
+  "sha256": "ae07ec6003bc03ea49b5e581bf377b35a1cd7cf182c2f5f93f0f44f5342ac07b",
+  "bytes": 2356355
  },
  "canciones/02_mi_raiz/fuente/02_Mi_raiz.psd": {
   "sha256": "e915793266dacb4ee603c5ecabf3177c727bf2a5b040fcc1f8c915a7ca9a7b65",
@@ -196,24 +196,24 @@
   "bytes": 4375550
  },
  "canciones/03_desierto/capas/tintas/t1_papel.png": {
-  "sha256": "7520a13128e998bd6dd977cb10be4fdbbbd1ef4e90ea4b50518e48f2f2b395f8",
-  "bytes": 20338
+  "sha256": "ab7f49adf51cad3025b09de284254fa69eebc94d45007f166110abd4907e0faa",
+  "bytes": 20333
  },
  "canciones/03_desierto/capas/tintas/t2_vino.png": {
-  "sha256": "34ca84dc139fd4284ce8ca05a049cef8c3bb20668a5d52021e3d3b39604347e5",
-  "bytes": 306109
+  "sha256": "ede6d14ee3c95686100db4c2a93c4ac699a60e25ec8484d3a998e10243aff664",
+  "bytes": 299908
  },
  "canciones/03_desierto/capas/tintas/t3_gris.png": {
-  "sha256": "815642db3bc25556cbf24f615c74e517e31bf4c6efad0e63c1125374f877af97",
-  "bytes": 517320
+  "sha256": "0c357ebbdfb559e35361dc3c9fe0c2cb7e8bbf21edeaf26880c7bf20d3beabdb",
+  "bytes": 510385
  },
  "canciones/03_desierto/capas/tintas/t4_crema.png": {
-  "sha256": "6bd38fee4262728152e8678d839ec933c76105ec0cbd0deca753e9a1e018e460",
-  "bytes": 1051066
+  "sha256": "fff002d3c573e9b99e66da4efb18eaa05711702bbf452c5d08c8a12f59b134fb",
+  "bytes": 1046242
  },
  "canciones/03_desierto/capas/tintas/t5_linea.png": {
-  "sha256": "e4e74bb26f5ed34483ca4554df4c08e67a5c761076083c5654a25f8987709af3",
-  "bytes": 1367254
+  "sha256": "4af79eef0e743280eb553a51ff12f91b14668e46a820f576a906a301377df108",
+  "bytes": 1325707
  },
  "canciones/03_desierto/fuente/03_Desierto.psd": {
   "sha256": "b4ae1518f3493a721a5b3640cba8fbe5c6db35b73d8ffe4c16de5924509f3c9d",
@@ -284,24 +284,24 @@
   "bytes": 5922434
  },
  "canciones/04_cordon/capas/tintas/t1_papel.png": {
-  "sha256": "7520a13128e998bd6dd977cb10be4fdbbbd1ef4e90ea4b50518e48f2f2b395f8",
-  "bytes": 20338
+  "sha256": "ab7f49adf51cad3025b09de284254fa69eebc94d45007f166110abd4907e0faa",
+  "bytes": 20333
  },
  "canciones/04_cordon/capas/tintas/t2_crema.png": {
-  "sha256": "e6eb1300e45789f626b920c0181ceb20f2cfedbc5df11abb5d0370ffc9d1f90f",
-  "bytes": 128852
+  "sha256": "fb1704ed971b70c54caa6da2d41bbb082c144487c40a521a03542a70393bc265",
+  "bytes": 127694
  },
  "canciones/04_cordon/capas/tintas/t3_vino.png": {
-  "sha256": "53efb18a8082b665b2e394e0afd79983392cc84e85e79268782e642470ec94cd",
-  "bytes": 1650491
+  "sha256": "0761fdbe0445a866d2e74b6229d2b91b7827d7013461d0341420d42ae4f1a2ef",
+  "bytes": 1638241
  },
  "canciones/04_cordon/capas/tintas/t4_gris.png": {
-  "sha256": "18e43058f4b3fa2c89a634bea384ded848166e3ceb0e333f1c00195ba2acd223",
-  "bytes": 1188936
+  "sha256": "5356f008f2a6f723467e2d77b9df27c06963625b2782a131d8cb4e8b3e2ee79d",
+  "bytes": 1149338
  },
  "canciones/04_cordon/capas/tintas/t5_linea.png": {
-  "sha256": "a85f56f896adf0ecf71d675637c7d4e8a1aae1961cfd2b331fbdfc447ceb761b",
-  "bytes": 2397727
+  "sha256": "77350c57d4ebd794abfb9788d9ac03eb04216aea7fe5327521e1a9fd2b2df4e1",
+  "bytes": 2301861
  },
  "canciones/04_cordon/fuente/04_Cordon.psd": {
   "sha256": "d3b505e2d5bcd5dc15ecb91d11f72986185d18e0ea6ad91b311e3768ffbd7bbb",
@@ -384,20 +384,20 @@
   "bytes": 3376011
  },
  "canciones/05_por_siempre/capas/tintas/t1_papel.png": {
-  "sha256": "23af9f892eb9c2832c221cf862fd624ad3f860d51f0c4b05aef070eed50ebf9c",
-  "bytes": 20337
+  "sha256": "ab7f49adf51cad3025b09de284254fa69eebc94d45007f166110abd4907e0faa",
+  "bytes": 20333
  },
  "canciones/05_por_siempre/capas/tintas/t2_crema.png": {
-  "sha256": "5c735886090b4827ed4c365b6f2e44313ec63d49024a9ec47a576006f499e152",
-  "bytes": 30526
+  "sha256": "9b952eae1658fccc50fcea34d34312225305fb59b05de90000d62124c10370ff",
+  "bytes": 30009
  },
  "canciones/05_por_siempre/capas/tintas/t3_vino.png": {
-  "sha256": "3e40af34976052434df70789265c88b24e219f66c109c6829f02e5d46b212d0e",
-  "bytes": 1041232
+  "sha256": "82be62f1d6d59f1d7b46db7158016bcf8057fc5e5c9508c76b24bb5cebf0acef",
+  "bytes": 1039134
  },
  "canciones/05_por_siempre/capas/tintas/t4_linea.png": {
-  "sha256": "f24b47ae789753f5cf91268406d948d39abb7764b13c9baab4e7fe4469ebba88",
-  "bytes": 1473925
+  "sha256": "4a176a3e32f77504f80578f9194f21f2bf42b923a45c8a6a5c6a1b5a65068d62",
+  "bytes": 1467993
  },
  "canciones/05_por_siempre/capas/tintas/t5_oculta.png": {
   "sha256": "4b209536d15cfe7a546ce5203d47597e0fdeb56d8c65b2c8006eb8e418ef4a0c",

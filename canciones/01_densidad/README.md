@@ -20,7 +20,7 @@ El relleno es borroso a propósito: solo asoma unos píxeles cuando el plano de 
 Recortes por polígono: los bordes de la mujer y del perro son aproximados (±10 px a 2048). Para
 movimientos sutiles no se nota; si se quiere moverlos mucho, afinar el polígono en `tools/separar_psd/01_densidad.json`.
 
-## Tintas (`capas/tintas/`)
+## Tintas (`capas/tintas/`: blancas con alfa; Max les pone el color)
 
 | Archivo | Tinta | Color medido | vs. *Por siempre* |
 |---|---|---|---|

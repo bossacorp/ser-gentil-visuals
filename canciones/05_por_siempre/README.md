@@ -18,7 +18,7 @@ Fuente: `05_Por_siempre.psd` (5906×5906 px, CMYK, 5 capas = tintas de serigraf�
 Recortes aproximados a revisar: el pie del león incluye un poco de nube; algunas chispas junto a
 la mujer y al león viajan con ellos. Para movimientos sutiles (< 3 % del cuadro) no se notan.
 
-## Tintas (`capas/tintas/`)
+## Tintas (`capas/tintas/`: blancas con alfa; Max les pone el color)
 
 | Archivo | Tinta | Color medido |
 |---|---|---|
@@ -28,8 +28,7 @@ la mujer y al león viajan con ellos. Para movimientos sutiles (< 3 % del cuadro
 | `t4_linea.png` | Línea y cielo | `#363636` |
 | `t5_oculta.png` | Capa oculta del PSD (trazos verdes, 0.3 %) | — |
 
-Apiladas t1 → t4 recomponen el arte (sin la oculta). Las máscaras en `mascaras/` permiten recolorear
-cada tinta con cualquier color en Max (`jit.gl.videoplane @color r g b a` sobre la máscara).
+Apiladas t1 → t4 recomponen el arte (sin la oculta). El motor de Max les aplica el color (`@color` del videoplane) desde `paleta.json` o una paleta alterna.
 
 ## Cargar en Max (prueba rápida)
 

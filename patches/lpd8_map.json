@@ -1,0 +1,23 @@
+{
+ "_nota": "Qué nota/CC manda cada control del LPD8. Valores por defecto SIN VERIFICAR (pads = notas 36–43, perillas = CC 70–77, programa 1). Verifica con el monitor MIDI del patch o usa el botón 'Aprender LPD8', que reescribe este archivo. canal 0 = cualquiera. tipo: note | cc.",
+ "pads": [
+  {"tipo": "note", "num": 36, "canal": 0},
+  {"tipo": "note", "num": 37, "canal": 0},
+  {"tipo": "note", "num": 38, "canal": 0},
+  {"tipo": "note", "num": 39, "canal": 0},
+  {"tipo": "note", "num": 40, "canal": 0},
+  {"tipo": "note", "num": 41, "canal": 0},
+  {"tipo": "note", "num": 42, "canal": 0},
+  {"tipo": "note", "num": 43, "canal": 0}
+ ],
+ "perillas": [
+  {"tipo": "cc", "num": 70, "canal": 0},
+  {"tipo": "cc", "num": 71, "canal": 0},
+  {"tipo": "cc", "num": 72, "canal": 0},
+  {"tipo": "cc", "num": 73, "canal": 0},
+  {"tipo": "cc", "num": 74, "canal": 0},
+  {"tipo": "cc", "num": 75, "canal": 0},
+  {"tipo": "cc", "num": 76, "canal": 0},
+  {"tipo": "cc", "num": 77, "canal": 0}
+ ]
+}
