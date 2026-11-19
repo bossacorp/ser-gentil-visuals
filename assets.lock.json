@@ -255,6 +255,102 @@
   "sha256": "637b93be0924902cf975ad8fd2fd3a87bd29c510b0307996be5a762a9451300c",
   "bytes": 813222
  },
+ "canciones/04_cordon/capas/escena/00_fondo.png": {
+  "sha256": "a716cbf2d681e689e6986cfa960531d63e3dbf816d7e9db3919b045037d233ef",
+  "bytes": 3403026
+ },
+ "canciones/04_cordon/capas/escena/01_combi.png": {
+  "sha256": "c153043a4be324b2acc23eecd6d5c2a41256934477dd784f84dc62524bc83592",
+  "bytes": 5881606
+ },
+ "canciones/04_cordon/capas/escena/02_reunion.png": {
+  "sha256": "9d150127bbc44c5c96061cf007f311e07ba1df0b3b7bf4f188f5d897c887f94c",
+  "bytes": 5739644
+ },
+ "canciones/04_cordon/capas/escena/03_mujer.png": {
+  "sha256": "751133d9e9e9647e49048c614794bcc913ea795a53131f8821b25238c0640744",
+  "bytes": 5895055
+ },
+ "canciones/04_cordon/capas/escena/04_fogata.png": {
+  "sha256": "0bde1398dec15379fbf54e05a5f9a227a9b1d68898b8e22322d6b33da2e57de5",
+  "bytes": 5903916
+ },
+ "canciones/04_cordon/capas/escena/05_yuca.png": {
+  "sha256": "f771d3ccbfb69b5a3e40b68582e8df5d5620b71f2d8a1457d75bc63d65b79e4c",
+  "bytes": 5965121
+ },
+ "canciones/04_cordon/capas/escena/06_primer_plano.png": {
+  "sha256": "ac18e4607f5f78ad7124f0b92a65cd72ff478dad38e4dc4f30319e512f13d74d",
+  "bytes": 5922434
+ },
+ "canciones/04_cordon/capas/tintas/t1_papel.png": {
+  "sha256": "7520a13128e998bd6dd977cb10be4fdbbbd1ef4e90ea4b50518e48f2f2b395f8",
+  "bytes": 20338
+ },
+ "canciones/04_cordon/capas/tintas/t2_crema.png": {
+  "sha256": "e6eb1300e45789f626b920c0181ceb20f2cfedbc5df11abb5d0370ffc9d1f90f",
+  "bytes": 128852
+ },
+ "canciones/04_cordon/capas/tintas/t3_vino.png": {
+  "sha256": "53efb18a8082b665b2e394e0afd79983392cc84e85e79268782e642470ec94cd",
+  "bytes": 1650491
+ },
+ "canciones/04_cordon/capas/tintas/t4_gris.png": {
+  "sha256": "18e43058f4b3fa2c89a634bea384ded848166e3ceb0e333f1c00195ba2acd223",
+  "bytes": 1188936
+ },
+ "canciones/04_cordon/capas/tintas/t5_linea.png": {
+  "sha256": "a85f56f896adf0ecf71d675637c7d4e8a1aae1961cfd2b331fbdfc447ceb761b",
+  "bytes": 2397727
+ },
+ "canciones/04_cordon/fuente/04_Cordon.psd": {
+  "sha256": "d3b505e2d5bcd5dc15ecb91d11f72986185d18e0ea6ad91b311e3768ffbd7bbb",
+  "bytes": 100054814
+ },
+ "canciones/04_cordon/mascaras/01_combi.png": {
+  "sha256": "5a5a00db2158b6bd509bc8a818a2591830b56ec678d2c64d646663c17163985a",
+  "bytes": 7011
+ },
+ "canciones/04_cordon/mascaras/02_reunion.png": {
+  "sha256": "642fa1838eca2efbd211aff96391865448a2a62df454c9bb90b87a87567911f3",
+  "bytes": 12104
+ },
+ "canciones/04_cordon/mascaras/03_mujer.png": {
+  "sha256": "10173fd61aa40bc9fed2530c2b2fe2ca8321966adc585fc84a071daa1b95a12b",
+  "bytes": 10265
+ },
+ "canciones/04_cordon/mascaras/04_fogata.png": {
+  "sha256": "dea747b23804d88b55a0be83f1c7aff5cd5bbc6420df8270af31c6e58556e042",
+  "bytes": 8113
+ },
+ "canciones/04_cordon/mascaras/05_yuca.png": {
+  "sha256": "65b2ae7e37db96c0df96f187ba308211bb1a8c211b8bd499888ca1dde09fbe4c",
+  "bytes": 56497
+ },
+ "canciones/04_cordon/mascaras/06_primer_plano.png": {
+  "sha256": "f24d9bdffa884559f9ce7b5efb37c7db54749876bdb994a8e3a857831ce9656a",
+  "bytes": 13927
+ },
+ "canciones/04_cordon/mascaras/t1_papel.png": {
+  "sha256": "12c77e4a41a055f618d9aa992c2950d8366a5b2cb554644eac215f5e814c8358",
+  "bytes": 6988
+ },
+ "canciones/04_cordon/mascaras/t2_crema.png": {
+  "sha256": "365fea50297b264804bddb796a83ea8f7511bea6000a0dfcd96443db810f5a31",
+  "bytes": 75466
+ },
+ "canciones/04_cordon/mascaras/t3_vino.png": {
+  "sha256": "2067bfebe66c6a62172c3d352d22dcef8cd11347381cb030510976bbbc259bd6",
+  "bytes": 990986
+ },
+ "canciones/04_cordon/mascaras/t4_gris.png": {
+  "sha256": "3c7f750060e198491633c8054b4da582623cd40bc467938d67c828db66035b76",
+  "bytes": 679052
+ },
+ "canciones/04_cordon/mascaras/t5_linea.png": {
+  "sha256": "7f171e6f9c29fa02eab85b3232447cf230fa0a3a7fdaccd5006cc091640189ed",
+  "bytes": 1453467
+ },
  "canciones/05_por_siempre/capas/escena/00_cielo.png": {
   "sha256": "bb5cc1bbeebc3f1caeb7de203643777c6d2bcda7c3080b765b0c532da2c885da",
   "bytes": 20335
