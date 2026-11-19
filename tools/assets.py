@@ -5,7 +5,9 @@ el repo solo guarda código, configuraciones, previews y un candado (assets.lock
 hash de cada archivo, así que cada commit sabe exactamente qué versión del arte usa.
 
 Configuración: assets.json en la raíz del repo  →  {"bucket": "gs://<bucket>/ser-gentil-visuals"}
-Requisito en la Mac: Google Cloud CLI (`gcloud`) con sesión iniciada (`gcloud auth login`).
+Requisito en la Mac: Google Cloud CLI (`gcloud`) con sesión iniciada:
+  gcloud auth login                     (tu cuenta de Google con acceso al bucket), o
+  gcloud auth activate-service-account --key-file <llave.json>   (nunca guardes la llave en el repo)
 
 Comandos (desde la raíz del repo):
   python3 tools/assets.py lock              recalcula assets.lock.json con lo que hay en disco
