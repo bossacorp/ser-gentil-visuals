@@ -128,13 +128,29 @@ def escena_cielo(comp, al_line, P, S, k):
 
 
 # ---------------------------------------------------------------- modo "capas"
-def escena_capas(comp, P, S, k):
+def escena_capas(comp, al_line, P, S, k):
     def poly(pts):
         m = np.zeros((S, S), np.uint8)
         cv2.fillPoly(m, [np.round(np.array(pts) / k).astype(np.int32)], 1)
         return m.astype(bool)
 
-    planos = [(p["nombre"], poly(p["poly"])) for p in P["planos"]]  # de atrás hacia adelante
+    def ajuste_oscuro(region, close_r):
+        """Ajusta el plano al borde real de una masa de tinta de línea (copa de árbol, casco):
+        cierra huecos chicos, rellena el interior y respeta las entradas abiertas (p. ej. un tronco)."""
+        m = ((al_line > 0.5) & region).astype(np.uint8)
+        m = cv2.morphologyEx(m, cv2.MORPH_CLOSE, disk(close_r / k))
+        cnts, _ = cv2.findContours(m, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+        filled = np.zeros_like(m)
+        cnts = [c for c in cnts if cv2.contourArea(c) > 400 / (k * k)]
+        cv2.drawContours(filled, cnts, -1, 1, -1)
+        return cv2.dilate(filled, disk(3 / k)).astype(bool) & region
+
+    planos = []  # de atrás hacia adelante
+    for p in P["planos"]:
+        m = poly(p["poly"])
+        if p.get("ajuste") == "oscuro":
+            m = ajuste_oscuro(m, p.get("cierre", 15))
+        planos.append((p["nombre"], m))
     masks = [np.ones((S, S), bool)] + [m for _, m in planos]
     names = ["00_fondo"] + [n for n, _ in planos]
     capas = []
@@ -203,7 +219,7 @@ def main():
     if P["modo"] == "cielo":
         capas, extra = escena_cielo(comp, al[tint_names[-1]], P, S, k)
     else:
-        capas, extra = escena_capas(comp, P, S, k)
+        capas, extra = escena_capas(comp, al[tint_names[-1]], P, S, k)
     pal.update(extra)
     hexs = {kk: "#%02x%02x%02x" % tuple(v) for kk, v in pal.items()}
     print("paleta", hexs)

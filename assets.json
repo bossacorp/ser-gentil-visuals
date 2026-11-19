@@ -1,0 +1,4 @@
+{
+ "bucket": "gs://CAMBIAR-NOMBRE-DEL-BUCKET/ser-gentil-visuals",
+ "_nota": "Archivos pesados (PSD fuente, capas y máscaras PNG) viven aquí; el repo guarda assets.lock.json con su hash. Ver tools/assets.py."
+}

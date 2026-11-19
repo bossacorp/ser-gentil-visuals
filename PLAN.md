@@ -10,7 +10,7 @@
 
 ```
 PSD del diseñador ──► tools/separar_psd/separar.py ──► canciones/<nn_nombre>/
-                         (+ poligonos.json por canción)        capas/escena/ 00–07  (elementos)
+                         (+ <nn_nombre>.json por canción)      capas/escena/ 00–07  (elementos)
                                                                capas/tintas/ t1–t5  (tintas de serigrafía)
                                                                mascaras/            (grises para efectos)
                                                                paleta.json          (colores medidos)
@@ -103,8 +103,10 @@ Bluetooth agrega latencia: en función, **USB**. CC/notas reales se verifican co
 
 - `main` = siempre abrible en función. Trabajo nuevo en ramas (`cancion/<nn>`, `patch/<feature>`) y merge al probar.
 - Tags: `v0.1`, `v0.5-ensayo`, `v1.0-concierto`.
-- Los `.psd` **no** se suben (53–100+ MB c/u); viven en la carpeta del diseñador. Todo se regenera con `separar.py`.
-  Si se quiere versionar los PSD → activar Git LFS (pendiente de decidir).
+- Archivos pesados (PSD fuente + capas PNG, ~40 MB por canción + 100–200 MB de PSD) → **bucket de GCS**
+  (`assets.json`), con *Object Versioning* activado. Git guarda `assets.lock.json` (hash por archivo),
+  así cada commit/tag fija la versión exacta del arte. Herramienta: `tools/assets.py` (lock/verify/push/pull/build).
+- Antes del show: `git checkout v1.0-concierto && python3 tools/assets.py pull` → todo local, sin depender de red en sede.
 
 ## 7. Decisiones y pendientes
 

@@ -5,6 +5,18 @@ en tiempo real desde Max con un **Akai LPD8**.
 
 - Plan, cronograma y mapa de controles → [`PLAN.md`](PLAN.md)
 
+## Archivos pesados (bucket de GCS)
+
+Los PSD y las capas PNG **no** van en git: viven en el bucket configurado en `assets.json`.
+El repo guarda `assets.lock.json` con el hash de cada archivo (cada commit fija su versión del arte).
+
+```
+python3 tools/assets.py pull        # baja capas/máscaras/PSD que falten y verifica hashes
+python3 tools/assets.py verify      # ¿lo que tengo en disco coincide con este commit?
+python3 tools/assets.py push        # sube lo generado (después de: build → lock)
+```
+Requiere `gcloud` con sesión iniciada. En la sede no hace falta internet: Max lee de disco.
+
 ## Estructura
 
 ```
@@ -24,7 +36,7 @@ docs/                      hojas de operación, notas de ensayo
 | # | Canción | Modo de separación | Estado |
 |---|---|---|---|
 | 01 | Densidad | planos de profundidad | capas listas |
-| 02 | — | | pendiente PSD |
+| 02 | Mi raíz | planos + ajuste a tinta oscura | capas listas |
 | 03 | — | | pendiente PSD |
 | 04 | — | | pendiente PSD |
 | 05 | Por siempre | cielo + figuras | capas listas |

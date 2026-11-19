@@ -1,8 +1,11 @@
-# Fuentes pesadas: viven fuera del repo (o en Git LFS si se decide)
+# Archivos pesados: viven en el bucket de GCS (ver assets.json y tools/assets.py).
+# El repo guarda assets.lock.json con el hash de cada uno.
 *.psd
 *.psb
 canciones/*/fuente/*
 !canciones/*/fuente/README.md
+canciones/*/capas/
+canciones/*/mascaras/
 
 # Max / macOS
 .DS_Store
