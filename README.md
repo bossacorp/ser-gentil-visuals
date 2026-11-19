@@ -37,11 +37,14 @@ docs/                      hojas de operación, notas de ensayo
 |---|---|---|---|
 | 01 | Densidad | planos de profundidad | capas listas |
 | 02 | Mi raíz | planos + ajuste a tinta oscura | capas listas |
-| 03 | — | | pendiente PSD |
+| 03 | Desierto | planos de profundidad | capas listas |
 | 04 | — | | pendiente PSD |
 | 05 | Por siempre | cielo + figuras | capas listas |
 
 ## Paleta común (homologado)
 
 Las tintas se repiten entre canciones: **vino `#885951`** y **línea `#363636`** idénticas, **crema ≈ `#d6c08e`**.
-Cada canción puede sumar una tinta propia (Densidad: gris verdoso `#6f7a75`). Detalle en `canciones/*/paleta.json`.
+Desde *Densidad* se suma el gris verdoso `#6f7a75` (también en *Mi raíz* y *Desierto*). Detalle en `canciones/*/paleta.json`.
+
+**Personajes recurrentes:** la mujer (01, 03, 05), el perro (01, 02) y el oso (03, 05) se repiten →
+mismo tratamiento de movimiento por personaje en todo el show.

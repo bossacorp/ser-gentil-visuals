@@ -175,6 +175,86 @@
   "sha256": "dd3418a65896db1c5a37228f8bf7af444db90bd45f9fbebaa2b82c753d9b33dc",
   "bytes": 1578095
  },
+ "canciones/03_desierto/capas/escena/00_fondo.png": {
+  "sha256": "b48f56f1ea46887089a13a620bcc077bec3e344394a60d85de4b0f0d897586ff",
+  "bytes": 3890005
+ },
+ "canciones/03_desierto/capas/escena/01_calavera.png": {
+  "sha256": "506e09d79133eec0a6202e75f1911e1c79f8ab6370f58d15daf31c2541ae7f47",
+  "bytes": 4368648
+ },
+ "canciones/03_desierto/capas/escena/02_oso.png": {
+  "sha256": "a07410c8e3344a7a68b521ecb1c7c8ee50f9efdfae7c5d45fdee359db3236dfa",
+  "bytes": 4365107
+ },
+ "canciones/03_desierto/capas/escena/03_mujer.png": {
+  "sha256": "5c0889806074ffb9d394a58737520684c696176c1a19b8fae80fc4643a3ca53e",
+  "bytes": 4379342
+ },
+ "canciones/03_desierto/capas/escena/04_rocas.png": {
+  "sha256": "a1495febca56c5d08eb395d5ed7abe7408a6ffdf2e9ae3b18b06990b328ac338",
+  "bytes": 4375550
+ },
+ "canciones/03_desierto/capas/tintas/t1_papel.png": {
+  "sha256": "7520a13128e998bd6dd977cb10be4fdbbbd1ef4e90ea4b50518e48f2f2b395f8",
+  "bytes": 20338
+ },
+ "canciones/03_desierto/capas/tintas/t2_vino.png": {
+  "sha256": "34ca84dc139fd4284ce8ca05a049cef8c3bb20668a5d52021e3d3b39604347e5",
+  "bytes": 306109
+ },
+ "canciones/03_desierto/capas/tintas/t3_gris.png": {
+  "sha256": "815642db3bc25556cbf24f615c74e517e31bf4c6efad0e63c1125374f877af97",
+  "bytes": 517320
+ },
+ "canciones/03_desierto/capas/tintas/t4_crema.png": {
+  "sha256": "6bd38fee4262728152e8678d839ec933c76105ec0cbd0deca753e9a1e018e460",
+  "bytes": 1051066
+ },
+ "canciones/03_desierto/capas/tintas/t5_linea.png": {
+  "sha256": "e4e74bb26f5ed34483ca4554df4c08e67a5c761076083c5654a25f8987709af3",
+  "bytes": 1367254
+ },
+ "canciones/03_desierto/fuente/03_Desierto.psd": {
+  "sha256": "b4ae1518f3493a721a5b3640cba8fbe5c6db35b73d8ffe4c16de5924509f3c9d",
+  "bytes": 60830822
+ },
+ "canciones/03_desierto/mascaras/01_calavera.png": {
+  "sha256": "0131fdec3a51140c84168d08e10fd98ee3d4c01f39c3d8c20b0ce90f7e5d8f22",
+  "bytes": 8638
+ },
+ "canciones/03_desierto/mascaras/02_oso.png": {
+  "sha256": "5dc7eb419e4ada628c026d7cc7081ebbd7bd596f37a9afb3c069b8c07717f798",
+  "bytes": 7055
+ },
+ "canciones/03_desierto/mascaras/03_mujer.png": {
+  "sha256": "86e14c36eba8d1bfb11074a94687ad5c90eef33b444831c6071c7ca241d23f9b",
+  "bytes": 12213
+ },
+ "canciones/03_desierto/mascaras/04_rocas.png": {
+  "sha256": "8800205908bf784d1073161421ff2f0b64631cefaa91c89bebda0aa53db10555",
+  "bytes": 10721
+ },
+ "canciones/03_desierto/mascaras/t1_papel.png": {
+  "sha256": "12c77e4a41a055f618d9aa992c2950d8366a5b2cb554644eac215f5e814c8358",
+  "bytes": 6988
+ },
+ "canciones/03_desierto/mascaras/t2_vino.png": {
+  "sha256": "80839b92d83b80ecf561c687bbb4ca85c776c920f6b68fb28da67830ab60c13a",
+  "bytes": 180334
+ },
+ "canciones/03_desierto/mascaras/t3_gris.png": {
+  "sha256": "604b2d9aae95f77e914402cc51493269fd88a295fa1821c1c0e7808d03121a31",
+  "bytes": 279607
+ },
+ "canciones/03_desierto/mascaras/t4_crema.png": {
+  "sha256": "6fda35afe19c9c1313751089c090969835ebd07b53407ca0ab903522e3e99487",
+  "bytes": 674694
+ },
+ "canciones/03_desierto/mascaras/t5_linea.png": {
+  "sha256": "637b93be0924902cf975ad8fd2fd3a87bd29c510b0307996be5a762a9451300c",
+  "bytes": 813222
+ },
  "canciones/05_por_siempre/capas/escena/00_cielo.png": {
   "sha256": "bb5cc1bbeebc3f1caeb7de203643777c6d2bcda7c3080b765b0c532da2c885da",
   "bytes": 20335

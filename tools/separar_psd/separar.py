@@ -130,8 +130,10 @@ def escena_cielo(comp, al_line, P, S, k):
 # ---------------------------------------------------------------- modo "capas"
 def escena_capas(comp, al_line, P, S, k):
     def poly(pts):
+        """Un polígono [[x,y],...] o varios [[[x,y],...], [[x,y],...]] (p. ej. dos grupos de rocas)."""
+        polys = pts if isinstance(pts[0][0], list) else [pts]
         m = np.zeros((S, S), np.uint8)
-        cv2.fillPoly(m, [np.round(np.array(pts) / k).astype(np.int32)], 1)
+        cv2.fillPoly(m, [np.round(np.array(p) / k).astype(np.int32) for p in polys], 1)
         return m.astype(bool)
 
     def ajuste_oscuro(region, close_r):
