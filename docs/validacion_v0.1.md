@@ -8,7 +8,7 @@ lo que solo Max puede decir. Anota en cada punto ✅ / ❌ y lo que diga la cons
 ## 0. Preparación
 - [ ] `git pull` · `python3 tools/assets.py pull` → termina en `ok`.
 - [ ] Abrir `patches/ser_gentil_motor.maxpat` desde el repo. ¿Abre en modo presentación?
-- [ ] Consola (⌘M): ¿algún objeto en rojo / error? Copia el texto.
+- [x] Consola (⌘M): ¿algún objeto en rojo / error? → 8× `js: bad outlet index 16` al abrir: corregido en 7923057 (19 nov).
 - [ ] Consola: debe decir `motor.js: raíz … · 5 canciones · 4 paletas`.
 
 ## 1. Imagen (lo más incierto)
@@ -16,12 +16,13 @@ lo que solo Max puede decir. Anota en cada punto ✅ / ❌ y lo que diga la cons
   - Si sale negro: revisa la consola. Punto a sospechar: `importmovie` de PNG en `jit.matrix`.
 - [ ] ¿Las capas tienen transparencia correcta? (el perro y la mujer sobre el mar, sin cuadros negros)
   - Si se ven bordes oscuros finos alrededor de las figuras: alfa premultiplicado (se arregla en v0.2).
-- [ ] Con K1 = 0, ¿el arte ocupa **exacto** el alto de la ventana, cuadrado, con barras negras a los lados?
+- [x] Con K1 = 0, ¿el arte ocupa **exacto** el alto de la ventana, cuadrado, con barras negras a los lados? ✅ (19 nov)
   - Si queda más grande/chico: cambiar `BASE` en `motor.js` (hoy 0.8284) hasta que llene exacto, y `init`.
 - [ ] ¿El orden de capas es correcto? (fondo atrás, figuras al frente)
 
 ## 2. Controles
 - [ ] Monitor MIDI: anota qué manda el LPD8 — pads: nota ___ a ___, perillas: CC ___ a ___, canal ___.
+  - 19 nov: perillas en CC del rango 1–7 y pads en notas del rango 36–46 (no coinciden con el mapa por defecto) → usar `aprender` y subir `patches/lpd8_map.json`.
   - Si no son notas 36–43 y CC 70–77: botón `aprender` (pads 1–8 y perillas 1–8 en orden).
 - [ ] Cada pad hace lo de `docs/operacion.md`. Las luces (toggles) de pads 1, 4 y 5 se encienden.
 - [ ] Perillas: al girar, ¿primero piden "tomar" y luego responden? ¿El dial en pantalla las sigue?
@@ -38,7 +39,7 @@ lo que solo Max puede decir. Anota en cada punto ✅ / ❌ y lo que diga la cons
 - [ ] Flash (pad 3) y negro (pad 1, K8).
 
 ## 4. Rendimiento
-- [ ] fps (en la interfaz) con *Por siempre* (8 capas), K6 = 50 %, K2/K3 al máximo: ___ fps (meta ≥ 50).
+- [x] fps (en la interfaz) con *Por siempre* (8 capas): 58–60 fps ✅ (19 nov). Pendiente repetir con K6 = 50 % y K2/K3 al máximo.
 - [ ] Tiempo de cambio de canción (del negro a la imagen): ___ s.
 - [ ] Pantalla completa en el proyector / monitor externo: ¿resolución y proporción correctas?
 
