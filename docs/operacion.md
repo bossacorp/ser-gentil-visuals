@@ -10,7 +10,7 @@ Patch: `patches/ser_gentil_motor.maxpat` · Lógica: `patches/motor.js` · Max 9
 3. Se abre la interfaz y una ventana `ser_gentil` con la canción 1.
 4. Arrastrar la ventana `ser_gentil` al proyector → activar **Pantalla completa** (o tecla `f`;
    `Esc` alterna).
-5. Conectar el LPD8 **por USB**, programa 1. Verificar en el monitor MIDI que pads y perillas llegan.
+5. Conectar el LPD8 **por USB**, programa 1 (pads = notas 36–43, perillas = CC 1–8). Verificar en el monitor MIDI que llegan.
 6. Recorrer las 5 canciones una vez (la primera carga de cada una tarda un poco; ocurre detrás de un negro).
 
 ## LPD8

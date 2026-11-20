@@ -22,7 +22,7 @@ lo que solo Max puede decir. Anota en cada punto ✅ / ❌ y lo que diga la cons
 
 ## 2. Controles
 - [ ] Monitor MIDI: anota qué manda el LPD8 — pads: nota ___ a ___, perillas: CC ___ a ___, canal ___.
-  - 19 nov: perillas en CC del rango 1–7 y pads en notas del rango 36–46 (no coinciden con el mapa por defecto) → usar `aprender` y subir `patches/lpd8_map.json`.
+  - ✅ 19 nov (aprendido): pads = notas 36–43, perillas = CC 1–8, canal cualquiera → `patches/lpd8_map.json`.
   - Si no son notas 36–43 y CC 70–77: botón `aprender` (pads 1–8 y perillas 1–8 en orden).
 - [ ] Cada pad hace lo de `docs/operacion.md`. Las luces (toggles) de pads 1, 4 y 5 se encienden.
 - [ ] Perillas: al girar, ¿primero piden "tomar" y luego responden? ¿El dial en pantalla las sigue?
