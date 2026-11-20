@@ -2,6 +2,7 @@
 const fs = require('fs'), vm = require('vm');
 const raiz = process.argv[2];
 const salidas = [];
+let cargando = true; const errores = [];  // como Max: sin salidas mientras corre el código de nivel superior
 class File {
   constructor(p, mode) { this.p = p; this.mode = mode; this.isopen = true; this.position = 0;
     if (mode === 'read') { try { this.buf = fs.readFileSync(p, 'latin1'); } catch (e) { this.isopen = false; } this.eof = this.buf ? this.buf.length : 0; }
@@ -10,16 +11,19 @@ class File {
   writestring(s) { this.out += s; this.position += s.length; }
   close() { if (this.mode === 'write') fs.writeFileSync(this.p + '.test', this.out); }
 }
-const ctx = { File, post: (s) => process.stdout.write('[post] ' + s), outlet: (o, ...a) => salidas.push([o].concat(a.flat())),
+const ctx = { File, post: (s) => process.stdout.write('[post] ' + s), outlet: (o, ...a) => { if (cargando) { errores.push('js: bad outlet index ' + o); return; } salidas.push([o].concat(a.flat())); },
   patcher: { filepath: raiz + '/patches/ser_gentil_motor.maxpat' }, Date, Math, JSON, messagename: '' };
 ctx.this = ctx;
 vm.createContext(ctx);
 vm.runInContext(fs.readFileSync(raiz + '/patches/motor.js', 'utf8'), ctx);
+cargando = false;
+console.log('errores al cargar el script:', errores.length ? errores.join(' | ') : 'ninguno');
 const call = (name, ...args) => { ctx.messagename = name; (ctx[name] || ctx.anything).apply(ctx, args); };
 const fr = (n) => { for (let i = 0; i < n; i++) call('bang'); };
 const malos = () => salidas.filter(s => s.some(x => typeof x === 'number' && !isFinite(x)));
 const ultimo = (o, sel) => { for (let i = salidas.length - 1; i >= 0; i--) { const s = salidas[i]; if (s[0] === o && (s[1] === sel || s[2] === sel)) return s; } };
 call('init');
+console.log('diales sincronizados en init:', salidas.filter(s => s[0] === 16 && s[1] === 'dial').length);
 console.log('menú:', salidas.filter(s => s[0] === 16 && s[1] === 'menu').map(s => s.slice(2).join(' ')).join(' | '));
 console.log('cargas 1a canción:', salidas.filter(s => s[2] === 'importmovie').length, ultimo(0, 'importmovie').slice(3).join(' ').replace(raiz, '<raiz>'));
 // simular 2 s a 60 fps con tiempo falso

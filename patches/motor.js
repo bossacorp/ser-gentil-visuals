@@ -104,14 +104,20 @@ function escribirTexto(rel, texto) {
 }
 
 // ---------------------------------------------------------------- inicio
+// OJO: al cargar el script Max aún no ha creado las salidas del objeto [js]; cualquier outlet()
+// en código de nivel superior da "bad outlet index". Aquí solo se prepara el estado; la interfaz
+// se sincroniza en init() (loadbang).
 function reiniciarPerillas() {
     for (var k = 0; k < 8; k++) {
         var v = (P[k] && P[k].v !== undefined) ? P[k].v : DEFAULTS[k];
         P[k] = {v: v, t: DEFAULTS[k], pegado: false, ultimo: null};
-        ui("dial", k, DEFAULTS[k]);
     }
 }
 reiniciarPerillas();
+
+function sincronizarDiales() {
+    for (var k = 0; k < 8; k++) ui("dial", k, r4(P[k].t));
+}
 
 function reiniciarEstado() {
     estado = {
@@ -146,6 +152,7 @@ function init() {
     MAPA = m;
     ui("menu", "clear");
     for (var i = 0; i < CANCIONES.length; i++) ui("menu", "append", (i + 1) + ". " + CANCIONES[i].titulo);
+    sincronizarDiales();
     cache = {};
     actual = -1;
     estado.cambio = null;
